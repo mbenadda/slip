@@ -397,7 +397,7 @@ window['Slip'] = (function(){
                     }
 
                     var move = this.getTotalMovement();
-                    this.target.node.style[transformPrefix] = 'translate(0,' + move.y + 'px) ' + hwTopLayerMagic + this.target.baseTransform.value;
+                    this.target.node.style[transformPrefix] = 'translate(0,' + move.y + 'px) ' + hwTopLayerMagic + this.target.baseTransform.value + ' scale(1.02)';
 
                     var height = this.target.height;
                     otherNodes.forEach(function(o){
